@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie.html</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d5635d350d.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="movieDetails()"> <!--load clicked movie details-->
+    <div class="header">
+        <div class="headercontainer">
+            <div>
+                <h1>MOVI<span class="yellow">POP</span></h1>
+            </div>
+            <div class="headerlink">
+                <span class="yellow"><a href="favorite.html">Favorite</a></span>
+                <span><a href="index.html">Home</a></span>
+                
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="moviecontainer">
+            <div class="movieposter">
+                <img id="moviePoster" alt="Movie Poster">
+            </div>
+            <div class="moviedetails">
+                <div class="detailsheader">
+                    <div class="dh-ls">
+                        <h2 id="movieTitle"></h2>
+                    </div>
+                    <div class="dh-rs">
+                        <i class="fa-solid fa-bookmark" onclick="addTofavorites('${id}')" style="cursor: pointer;"></i>
+                    </div>
+                </div>
+                <span class="italics">
+                    <i id="movieYear"></i> &#x2022; <i id="movieCountry"></i> &#x2022; Rating - 
+                    <span style="font-size: 18px; font-weight: 600;" id="movieRating"></span>/10
+                </span>
+                <ul class="details-ul">
+                    <li><strong>Actors: </strong><span id="movieActors"></span></li>
+                    <li><strong>Director: </strong><span id="movieDirector"></span></li>
+                    <li><strong>Writers: </strong><span id="movieWriter"></span></li>
+                </ul>
+                <ul class="details-ul">
+                    <li><strong>Genre: </strong><span id="movieGenre"></span></li>
+                    <li><strong>Release Date: </strong><span id="movieReleaseDate"></span></li>
+                    <li><strong>Box Office: </strong><span id="movieBoxOffice"></span></li>
+                    <li><strong>Movie Runtime: </strong><span id="movieRuntime"></span></li>
+                </ul>
+                <p style="font-size: 14px; margin-top:10px;" id="moviePlot"></p>
+                <p style="font-size: 15px; font-style: italic; color: #222; margin-top: 10px;">
+                    <i class="fa-solid fa-award"></i>
+                    &thinsp; <span id="movieAwards"></span>
+                </p>
+            </div> 
+        </div>
+    </div>
+</body>
+
+</html>

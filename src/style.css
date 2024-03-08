@@ -1,0 +1,224 @@
+/* Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #333;
+    color: #ffe900;
+}
+
+/* Header Bar */
+.header {
+    background-color: #ca0000;
+    height: 10vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.headercontainer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+    margin: 0; /* Remove default margin for h1 */
+}
+
+.yellow {
+    color: #ffff00;
+}
+
+.searchbox {
+    display: flex;
+    align-items: center;
+}
+
+.searchbar {
+    width: 70%;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    background-color: #f00;
+    color: #fff;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #555;
+    cursor: pointer;
+}
+
+.headerlink {
+    color: #fff;
+}
+
+.headerlink a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 10px;
+    transition: color 0.5s ease-in-out;
+}
+
+.headerlink a:hover {
+    color: #bbb;
+}
+
+/* Search Bar */
+.searchbox {
+    width: 30%;
+    background-color: #fff;
+    margin-left: auto;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 1px 2px #d7d7d7;
+    display: flex;
+    flex-direction: row;
+}
+
+.searchbox input {
+    width: 70%;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 4px;
+}
+
+.searchbox button {
+    width: 30%;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #e7e7e7;
+}
+
+.main {
+    background-color: #ebebeb;
+    color: #000;
+    padding: 20px;
+    min-height: 80vh;
+}
+
+.movielist { /*list style*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.fetchmovie {
+    box-shadow: 1px 2px #c4c4c4;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.fetchmovie a {
+    text-decoration: none;
+    color: #000;
+    font-family:auto
+}
+
+.fetchposter img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.moviecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    padding: 20px;
+}
+
+.movieposter {
+    flex: 0 0 30%; 
+}
+
+.movieposter img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.moviedetails {
+    flex: 0 0 70%;
+    margin-left: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.detailsheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detailsheader h2 {
+    margin: 0;
+}
+
+.fa-bookmark {
+    color: #3498db;
+}
+
+.italics {
+    font-style: italic;
+    color: #777;
+}
+
+.details-ul {
+    list-style: none;
+    padding: 0;
+}
+
+.details-ul li {
+    margin-bottom: 10px;
+}
+
+.moviedetails p {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.moviedetails p:last-child {
+    font-size: 15px;
+    font-style: italic;
+    color: #222;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-award {
+    margin-right: 5px;
+    color: #f39c12;
+}
+
+h4 {
+    text-align: center;
+    margin: 0;
+}
